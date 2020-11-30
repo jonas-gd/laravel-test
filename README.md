@@ -1,6 +1,14 @@
 # Laravel-test
 
-Simple application of crud in laravel. Contact me if you need more details.
+Simple application of crud on the laravel.
+
+The application uses a custom theme in the laravel. The version of laravel 8.15.0 and mysql database.
+
+Crud has a migration to the tables in the database. The forms have some validations and the numbers and preferences form uses livewire for a richer interface.
+
+The user can register Customers. Customers have numbers and numbers have preferences.
+
+ Contact me if you need more details.
 
 ## Some application screens
 
