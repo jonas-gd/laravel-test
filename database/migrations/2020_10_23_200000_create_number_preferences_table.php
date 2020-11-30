@@ -15,7 +15,6 @@ class CreateNumberPreferencesTable extends Migration
     {
         Schema::create('number_preferences', function (Blueprint $table) {
             $table->id();
-            //$table->string('id')->unique();
             $table->unsignedBigInteger('number_id')->unsigned();
             $table->foreign('number_id')->references('id')->on('numbers');
             $table->string('name')->nullable(false);

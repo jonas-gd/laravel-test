@@ -15,10 +15,8 @@ class CreateNumbersTable extends Migration
     {
         Schema::create('numbers', function (Blueprint $table) {
             $table->id();
-            //$table->string('id')->unique();
             $table->unsignedBigInteger('customer_id')->unsigned();
             $table->foreign('customer_id')->references('id')->on('customers');
-            //$table->string('name');
             $table->string('number',14)->nullable(false);
             $table->string('status')->default('active');
             $table->timestamps();
